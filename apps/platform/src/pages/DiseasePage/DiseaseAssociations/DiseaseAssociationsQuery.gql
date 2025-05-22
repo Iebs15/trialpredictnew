@@ -1,0 +1,45 @@
+query DiseaseAssociationsQuery(
+  $id: String!
+  $index: Int!
+  $size: Int!
+  $sortBy: String!
+  $enableIndirect: Boolean!
+  $datasources: [DatasourceSettingsInput!]
+  $rowsFilter: [String!]
+  $facetFilters: [String!]
+  $entitySearch: String!
+) {
+  disease(efoId: $id) {
+    id
+    name
+    associatedTargets(
+      page: { index: $index, size: $size }
+      orderByScore: $sortBy
+      enableIndirect: $enableIndirect
+      datasources: $datasources
+      Bs: $rowsFilter
+      facetFilters: $facetFilters
+      BFilter: $entitySearch
+    ) {
+      count
+      rows {
+        target {
+          id
+          approvedSymbol
+          approvedName
+          prioritisation {
+            items {
+              key
+              value
+            }
+          }
+        }
+        score
+        datasourceScores {
+          componentId: id
+          score
+        }
+      }
+    }
+  }
+}

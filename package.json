@@ -1,0 +1,42 @@
+{
+  "name": "ot-ui-apps",
+  "version": "0.0.1",
+  "dataRelease": "25.06",
+  "private": true,
+  "license": "Apache-2.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "bugs": {
+    "url": "https://github.com/opentargets/ot-ui-apps/issues",
+    "email": "support@targetvalidation.org"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "build:no-cache": "turbo run build --parallel --no-cache",
+    "dev": "turbo run dev --parallel",
+    "dev:platform": "turbo run dev --filter=platform",
+    "build:platform": "turbo run build --filter=platform",
+    "dev:platform:ppp": "turbo run dev-ppp --filter=platform",
+    "build:platform:ppp": "turbo run build-ppp --filter=platform",
+    "lint": "turbo run lint",
+    "lint:platform": "turbo run lint --filter=platform",
+    "format": "turbo run prettier:all",
+    "format:check": "turbo run prettier:check",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-custom": "*",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "prettier": "^2.5.1",
+    "turbo": "^2.4.2"
+  },
+  "packageManager": "yarn@1.22.18",
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": "eslint --cache --fix",
+    "*.{ts,tsx,js,jsx,md}": "prettier --write"
+  }
+}
