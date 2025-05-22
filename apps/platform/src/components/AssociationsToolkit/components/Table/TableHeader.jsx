@@ -76,7 +76,7 @@ function TableHeader({ table, cols }) {
                       ),
                     }[header.column.getIsSorted()] ?? null}
 
-                    {header.column.columnDef.docsLink && (
+                    {/* {header.column.columnDef.docsLink && (
                       <a
                         rel="noreferrer"
                         target="_blank"
@@ -85,7 +85,7 @@ function TableHeader({ table, cols }) {
                       >
                         <FontAwesomeIcon className="header-desc-icon" icon={faBook} />
                       </a>
-                    )}
+                    )} */}
                   </div>
                 )}
               </div>
