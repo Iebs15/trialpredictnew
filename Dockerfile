@@ -17,6 +17,6 @@ COPY --from=builder /app/apps/platform/bundle-platform ./bundle-platform
 
 RUN yarn global add serve
 
-EXPOSE 3000
+EXPOSE 4000
 
-CMD ["serve", "-s", "bundle-platform", "-l", "3000"]
+CMD ["serve", "-s", "bundle-platform", "-l", "4000"]
