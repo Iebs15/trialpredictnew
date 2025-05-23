@@ -40,6 +40,7 @@ import HomeBox from "./HomeBox";
 import Splash from "./Splash";
 import Version from "./Version";
 import HomePageSuggestions from "./HomePageSuggestions";
+import SearchSuggestionsLegend from './SearchSuggestionsLegend';
 const config = getConfig();
 
 // Theme Context
@@ -345,6 +346,7 @@ function HomePageContent(): JSX.Element {
           <GlobalSearch isHomePage />
           {/* Search examples */}
           <HomePageSuggestions />
+          <SearchSuggestionsLegend />
           <Version releaseNotesURL={releaseNotesURL} />
         </HomeBox>
 
