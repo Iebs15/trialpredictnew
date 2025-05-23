@@ -427,7 +427,7 @@ function HomePageContent(): JSX.Element {
           <Box
             sx={{
               display: "flex",
-              justifyContent: "space-between",
+              justifyContent: "center",
               gap: { xs: 5, md: 1 },
               alignItems: { xs: "center", md: "flex-start" },
               flexDirection: {
@@ -449,7 +449,7 @@ function HomePageContent(): JSX.Element {
               external
             />
 
-            <HelpBoxPanel
+            {/* <HelpBoxPanel
               fai={faQuestionCircle}
               url="https://platform-docs.opentargets.org/"
               label="Check out our Platform documentation"
@@ -468,7 +468,7 @@ function HomePageContent(): JSX.Element {
               url="https://community.opentargets.org/"
               label="Join the TrialPredict Community"
               external
-            />
+            /> */}
           </Box>
         </Grid>
       </Grid>
