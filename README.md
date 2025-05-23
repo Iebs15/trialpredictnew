@@ -12,7 +12,7 @@ This repository holds the TrialPredict web applications.
 
 ## Running development
 
-This project contains the [Platform](https://platform.opentargets.org/) web application. To run in development mode, you can run: `yarn dev` in the root directory.
+This project contains the [Platform]() web application. To run in development mode, you can run: `yarn dev` in the root directory.
 
 To run only Platform `yarn dev:platfrom`
 

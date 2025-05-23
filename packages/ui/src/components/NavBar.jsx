@@ -144,11 +144,11 @@ function NavBar({ name, search, api, downloads, docs, contact, homepage, items, 
         </Box>
 
         <div className={classes.navMenu}>
-          {docs ? (
+          {/* {docs ? (
             <MenuExternalLink classes={classes} href={docs}>
               Docs
             </MenuExternalLink>
-          ) : null}
+          ) : null} */}
 
           {api ? (
             <MenuExternalLink classes={classes} href={api}>

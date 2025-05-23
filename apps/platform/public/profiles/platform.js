@@ -2,14 +2,14 @@
 var configProfile = {
   /* general items */
 
-  documentationUrl: "https://platform-docs.opentargets.org",
-  communityUrl: 'https://community.opentargets.org',
-  communityTicketUrl: 'https://community.opentargets.org/c/community-feedback/bug-reports/34',
+  documentationUrl: "",
+  communityUrl: '',
+  communityTicketUrl: '',
 
   /* colors */
-  primaryColor: '#3489ca',
-  secondaryColor: '#18405e',
-  
+  primaryColor: '#88c9bf',   // soft green
+  secondaryColor: '#a3c4f3',
+
   // colorRange: [],
   // custom colour scale: override value in constants.js
 

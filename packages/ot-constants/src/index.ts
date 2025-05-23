@@ -64,7 +64,7 @@ export const externalLinks = {
   ] as ExternalLink[],
   license: {
     label: "TrialPredict Platform",
-    url: "https://platform.opentargets.org/",
+    url: "",
   } as ExternalLink,
   network: [
     { label: "Science", url: "https://www.opentargets.org/science" },
@@ -134,11 +134,11 @@ export const mainMenuItems: MenuItem[] = config.profile.mainMenuItems ?? [
     external: false,
     showOnlyPartner: true,
   },
-  {
-    name: "Documentation",
-    url: "https://platform-docs.opentargets.org/getting-started",
-    external: true,
-  },
+  // {
+  //   name: "Documentation",
+  //   url: "https://platform-docs.opentargets.org/getting-started",
+  //   external: true,
+  // },
   {
     name: "PPP Documentation",
     url: "https://home.opentargets.org/ppp-documentation",
@@ -155,11 +155,11 @@ export const mainMenuItems: MenuItem[] = config.profile.mainMenuItems ?? [
     url: "/api",
     external: false,
   },
-  {
-    name: "Community",
-    url: "https://community.opentargets.org/",
-    external: true,
-  },
+  // {
+  //   name: "Community",
+  //   url: "https://community.opentargets.org/",
+  //   external: true,
+  // },
   {
     name: "Contact us",
     url: `mailto:${config.profile.helpdeskEmail}`,

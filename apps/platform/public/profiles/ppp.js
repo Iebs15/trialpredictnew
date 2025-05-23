@@ -2,11 +2,11 @@
 var configProfile = {
   /* general items */
 
-  documentationUrl: "https://platform-docs.opentargets.org",
-  helpdeskEmail: 'partner-support@opentargets.org',
-  communityUrl: 'https://community.opentargets.org',
+  documentationUrl: "",
+  helpdeskEmail: '',
+  communityUrl: '',
   communityTicketUrl:
-    'https://community.opentargets.org/c/community-feedback/bug-reports/34',
+    '',
   // config navbar main menu (hamburger)
   // mainMenuItems: [],
   // homepage logo subtitle (tagline)
@@ -15,21 +15,22 @@ var configProfile = {
   /* colors */
 
   // primaryColor: '#2f7bb5',
-  primaryColor: '#3489ca',
-  secondaryColor: '#18405e',
+  primaryColor: '#88c9bf',   // soft green
+  secondaryColor: '#a3c4f3',
   // custom colour scale: override value in constants.js
   colorRange: [
-    '#e5edf4',
-    '#ccdcea',
-    '#b2cbe0',
-    '#99b9d6',
-    '#7fa8cc',
-    '#6697c1',
-    '#4c85b7',
-    '#3274ad',
-    '#1963a3',
-    '#005299',
+    '#e6f4f1', // very light mint
+    '#cceae3', 
+    '#b3dfd5',
+    '#99d5c7',
+    '#80cab9',
+    '#a9d1e8', // soft transition to blue
+    '#90bfe1',
+    '#77adda',
+    '#5e9bd3',
+    '#4589cc'  // soft but deeper blue
   ],
+  
 
   /* partner preview options */
 
